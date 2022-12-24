@@ -5,6 +5,8 @@ import PreviewSuspense from "../../components/PreviewSuspense";
 import PreviewBlogList from "../../components/PreviewBlogList";
 import BlogList from "../../components/BlogList";
 import Hero from "../../components/Hero";
+import Banner from "../../components/Banner";
+
 
 const query = groq`
 *[_type=='post'] {
@@ -37,6 +39,7 @@ export default async function HomePage() {
     console.log(posts)
     return(
         <div>
+        <Banner/>
         <Hero/>
         <BlogList posts={posts}/>
         </div>
