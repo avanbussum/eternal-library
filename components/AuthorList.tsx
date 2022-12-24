@@ -1,8 +1,10 @@
+"use client"
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import urlFor from "../lib/urlFor";
 import ClientSideRoute from "./ClientSideRoute";
+import Contact from "./Contact";
 import { RichTextComponents } from "./RichTextComponents";
 
 type Props = {
@@ -12,7 +14,7 @@ type Props = {
 function AuthorList({authors}: Props) {
     return (
         <div>
-            <h1 className="flex flex-col lg:flex-row lg:space-x-5 justify-between font-bold px-10 mb-6 text-5xl font-serif">The Author</h1>
+            <h1 className="flex flex-col lg:flex-row lg:space-x-5 justify-between font-semibold px-10 mb-6 text-5xl">The Author</h1>
                 {/* Posts */}
                 {authors.map(author => (
                     <div key={author._id} className="flex flex-col mb-6 px-10 gap-x-10 pb-16">
@@ -29,7 +31,7 @@ function AuthorList({authors}: Props) {
                                 </div>
                             </div>
                             <div>
-                                    <div className="bg-[#d4af37] text-center text-white px-3 py-3 rounded-lg font-semibold text-lg h-96 flex flex-col justify-center">
+                                    <div className="bg-gradient-to-r from-[#e9e8e5] to-[#dedbdb] text-center text-black px-3 py-3 rounded-lg font-semibold text-lg h-96 flex flex-col justify-center">
                                         <PortableText value={author.bio} components={RichTextComponents}/>
                                     </div>
                                
@@ -46,6 +48,7 @@ function AuthorList({authors}: Props) {
 
                     </div>
                 ))}
+                <Contact/>
             </div>
     )
 }

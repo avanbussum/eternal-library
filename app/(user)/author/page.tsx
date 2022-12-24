@@ -5,6 +5,7 @@ import { client } from "../../../lib/sanity.client";
 import AuthorList from "../../../components/AuthorList";
 import PreviewAuthorList from "../../../components/PreviewAuthorList";
 
+
 const query = groq`
 *[_type=='author'] {
     ...,
@@ -33,6 +34,8 @@ export default async function AboutPage() {
     const authors = await client.fetch(query);
     console.log(authors)
     return(
-        <AuthorList authors={authors}/>
+        <div>
+            <AuthorList authors={authors}/>
+        </div>
     );
 }

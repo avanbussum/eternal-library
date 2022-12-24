@@ -2,14 +2,14 @@ import Image from "next/image"
 import Link from "next/link"
 function Header() {
   return (
-    <header className="flex items-center justify-between space-x-2 font-bold px-10 py-1 w-full bg-gradient-to-r from-[#F5F2E8] to-[#D4D4D4] border-y-[#d4af37] border-b-4">
+    <header className="flex items-center justify-between space-x-2 font-bold px-10 mb-4 w-full bg-gradient-to-r from-[#e9e8e5] to-[#dedbdb]">
         <div>
             <Link href="/">
                 <Image
                     className="rounded-full"
                     height={55}
                     width={55}
-                    src="/../public/images/feather-removebg-preview.png"
+                    src="/images/feather-removebg-preview.png"
                     alt="logo"
                 />
             </Link>
