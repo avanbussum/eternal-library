@@ -7,15 +7,18 @@ import Hero from './Hero';
 
 type Props = {
     query: string;
+    query2: string;
 }
 
-export default function PreviewBlogList({ query }:
+export default function PreviewBlogList({ query, query2 }:
 Props) {
     const posts = usePreview(null, query);
+    const quotes = usePreview(null, query2);
+
 
     return <div>
         <Banner/>
-        <Hero/>
+        <Hero quotes={quotes}/>
         <BlogList posts={posts}/>
         </div>
 }

@@ -36,7 +36,7 @@ export default async function HomePage() {
                     </div>
                 }
             >
-                <PreviewBlogList query={query}/>
+                <PreviewBlogList query={query} query2={query2}/>
             </PreviewSuspense>
         );
     }
