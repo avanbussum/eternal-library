@@ -15,7 +15,7 @@ function AuthorList({authors}: Props) {
     return (
         <div>
             <h1 className="flex flex-col lg:flex-row lg:space-x-5 justify-between font-semibold px-10 my-5 mb-6 text-5xl">The Author</h1>
-                {/* Posts */}
+                {/* Authors */}
                 {authors.map(author => (
                     <div key={author._id} className="flex flex-col mb-6 px-10 gap-x-10 pb-16">
                         

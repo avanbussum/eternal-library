@@ -58,6 +58,12 @@ interface Category extends Base {
     title: string;
 }
 
+interface Quote extends Base {
+    description: string;
+    title: string;
+    image: Image;
+}
+
 interface MainImage {
     _type: "image";
     asset: Reference;

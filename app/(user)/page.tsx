@@ -16,6 +16,12 @@ const query = groq`
 } | order(_createdAt desc)
 `;
 
+const query2 = groq`
+*[_type=='quote'] {
+    ...
+}
+`;
+
 export const revalidate = 30; //revalidate this page every 30 seconds
 
 export default async function HomePage() {
@@ -36,11 +42,13 @@ export default async function HomePage() {
     }
 
     const posts = await client.fetch(query);
+    const quotes = await client.fetch(query2);
+
     console.log(posts)
     return(
         <div>
         <Banner/>
-        <Hero/>
+        <Hero quotes={quotes}/>
         <BlogList posts={posts}/>
         </div>
     );

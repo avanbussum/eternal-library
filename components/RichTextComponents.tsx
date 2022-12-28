@@ -26,6 +26,9 @@ export const RichTextComponents = {
         ),
     },
     block: {
+        normal: ({ children }: any) => (
+            <p className="mb-8">{children}</p>
+        ),
         h1: ({ children }: any) => (
             <h1 className="text-5xl py-5 font-bold">{children}</h1>
         ),

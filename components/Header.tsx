@@ -53,7 +53,13 @@ const Header = () => {
                 <div className="rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-50">
                     <div className="px-5 pt-5 pb-6">
                         <div className="flex items-center justify-between">
-                            <h1 className="font-bold">RVB</h1>
+                        <Image
+                            className="rounded-full"
+                            height={60}
+                            width={60}
+                            src="/images/fthr-removebg-preview.png"
+                            alt="logo"
+                        />
                             <div className="mr-2">
                                 <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400
                                 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -65,12 +71,12 @@ const Header = () => {
                         <div className="mt-6">
                             <nav className="grid gap-y-8">
                                 <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/">Home</Link>
-                                <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/about">About</Link>
+                                <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/author">About</Link>
                                 <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/contact">Contact</Link>
                             </nav>
                         </div>
                         <div className="mt-6 flex flex-col items-center gap-2">
-                            <Link href="/newsletter" className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2
+                            <Link href="https://mailchimp.com/landers/newsletters/?ds_c=3Q_AOC_Google_Search_US_EN_Brand_Acquire_Exact_MKAG_US&gclid=Cj0KCQiAwJWdBhCYARIsAJc4idBLbU1kHZJQXUL6d-TkbvXwiewy8ta0XHYUKs7nOEp_iTGDqNxo6-QaArQ5EALw_wcB&gclsrc=aw.ds" className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2
                             focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">Newsletter</Link>
                         </div>
                     </div>
@@ -79,7 +85,7 @@ const Header = () => {
             </Transition>
 
             <div className="hidden sm:block">
-                <Link href="/newsletter" className="mr-2 font-bold">Newsletter</Link>
+                <Link href="https://mailchimp.com/landers/newsletters/?ds_c=3Q_AOC_Google_Search_US_EN_Brand_Acquire_Exact_MKAG_US&gclid=Cj0KCQiAwJWdBhCYARIsAJc4idBLbU1kHZJQXUL6d-TkbvXwiewy8ta0XHYUKs7nOEp_iTGDqNxo6-QaArQ5EALw_wcB&gclsrc=aw.ds" className="mr-2 font-bold">Newsletter</Link>
             </div>
         </Popover>
     )

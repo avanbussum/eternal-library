@@ -8,7 +8,7 @@ function Logo(props: any) {
                 className="rounded-full object-cover"
                 height={50}
                 width={50}
-                src="https://api.time.com/wp-content/uploads/2014/09/macaca_nigra_self-portrait_rotated_and_cropped.jpg?quality=85&w=666&h=628&crop=1"
+                src="/images/Ryan2.jpg"
                 alt="logo"
             />
             <>{renderDefault(props)}</>
