@@ -9,7 +9,7 @@ function Banner() {
         <div className="flex items-center justify-center">
             <div className="mt-10 lg:mt-28 flex flex-col text-center lg:flex-row lg:space-x-5 justify-between font-bold px-10 py-3">
                 <div className="text-white" >
-                    <h1 className="text-7xl font-serif">Eternal Library</h1>
+                    <h1 className="text-7xl font-serif">The Eternal Library</h1>
                     <h2 className="mt-5 font-serif md:mt-3">
                         Short Stories from the {" "}
                         <span className="underline decoration-2 decoration-[#d4af37]">

@@ -27,7 +27,9 @@ export const RichTextComponents = {
     },
     block: {
         normal: ({ children }: any) => (
-            <p className="mb-6">{children}</p>
+            <div className="whitespace-pre-wrap">
+                <p className="text-lg font-serif whitespace-pre-wrap">&emsp;&emsp;{children}</p>
+            </div>
         ),
         h1: ({ children }: any) => (
             <h1 className="text-5xl py-5 font-bold">{children}</h1>

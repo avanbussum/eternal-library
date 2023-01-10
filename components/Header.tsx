@@ -76,7 +76,7 @@ const Header = () => {
                             </nav>
                         </div>
                         <div className="mt-6 flex flex-col items-center gap-2">
-                            <Link href="https://mailchimp.com/landers/newsletters/?ds_c=3Q_AOC_Google_Search_US_EN_Brand_Acquire_Exact_MKAG_US&gclid=Cj0KCQiAwJWdBhCYARIsAJc4idBLbU1kHZJQXUL6d-TkbvXwiewy8ta0XHYUKs7nOEp_iTGDqNxo6-QaArQ5EALw_wcB&gclsrc=aw.ds" className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2
+                            <Link href="http://eepurl.com/ihYDYX" className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2
                             focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">Newsletter</Link>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ const Header = () => {
             </Transition>
 
             <div className="hidden sm:block">
-                <Link href="https://mailchimp.com/landers/newsletters/?ds_c=3Q_AOC_Google_Search_US_EN_Brand_Acquire_Exact_MKAG_US&gclid=Cj0KCQiAwJWdBhCYARIsAJc4idBLbU1kHZJQXUL6d-TkbvXwiewy8ta0XHYUKs7nOEp_iTGDqNxo6-QaArQ5EALw_wcB&gclsrc=aw.ds" className="mr-2 font-bold">Newsletter</Link>
+                <Link href="http://eepurl.com/ihYDYX" className="mr-2 font-bold">Newsletter</Link>
             </div>
         </Popover>
     )

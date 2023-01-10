@@ -18,7 +18,7 @@ const query = groq`
 
 const query2 = groq`
 *[_type=='quote'] {
-    ...
+    ...,
 }
 `;
 
