@@ -72,13 +72,15 @@ const Header = () => {
                             <nav className="grid gap-y-8">
                                 <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/">Home</Link>
                                 <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/author">About</Link>
-                                <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/contact">Contact</Link>
+                                <Link href="http://eepurl.com/ihYDYX" className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2">Newsletter</Link>
                             </nav>
                         </div>
+                        {/* 
                         <div className="mt-6 flex flex-col items-center gap-2">
                             <Link href="http://eepurl.com/ihYDYX" className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2
                             focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">Newsletter</Link>
                         </div>
+                        */}
                     </div>
                 </div>
             </Popover.Panel>

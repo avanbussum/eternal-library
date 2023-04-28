@@ -41,11 +41,12 @@ function AuthorList({authors}: Props) {
                         <div className="mt-5 flex-1">
                             <p className="underline text-lg font-bold">{author.name}</p>
                         </div>
+                        {/*
                         <p className="mt-5 font-bold flex items-center group-hover:underline font-mono">
                             Read Post
                             <ArrowUpRightIcon className="ml-2 h-4 w-4"/>
                         </p>
-
+                        */}
                     </div>
                 ))}
                 <Contact/>

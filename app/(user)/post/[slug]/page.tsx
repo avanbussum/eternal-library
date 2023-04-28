@@ -99,8 +99,10 @@ async function Post({ params: { slug } }: Props) {
                 </section>
             </div>
         </section>
-        <div className="">
-            <PortableText value={post.body} components={RichTextComponents}/>
+        <div className="lg:px-32 mb-auto" style={{backgroundImage: `url('https://images.unsplash.com/photo-1516054719048-38394ee6cf3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')`}}>
+            <div className="bg-white lg:px-10 font-serif">
+                <PortableText value={post.body} components={RichTextComponents}/>
+            </div>
         </div>
     </article>
 }
