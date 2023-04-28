@@ -20,11 +20,11 @@ function Banner() {
                         Writing | Philosophy | Magic
                     </h4>
                     <div className="flex justify-center items-center gap-4">
-                        <div className="mt-8 lg:mt-10 flex justify-center items-center">
-                            <Link href="/author" className="bg-white px-8 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white">The Author</Link> 
+                        <div className="mt-6 lg:mt-10 flex justify-center items-center">
+                            <Link href="/author" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white">The Author</Link> 
                         </div>
-                        <div className="mt-8 lg:mt-10 flex justify-center items-center">
-                            <Link href="http://eepurl.com/ihYDYX" className="bg-white px-8 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white">Newsletter</Link> 
+                        <div className="mt-6 lg:mt-10 flex justify-center items-center">
+                            <Link href="http://eepurl.com/ihYDYX" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white">Newsletter</Link> 
                         </div>
                     </div>
                 </div>
