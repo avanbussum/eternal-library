@@ -7,7 +7,8 @@ import BlogList from "../../components/BlogList";
 import Hero from "../../components/Hero";
 import Banner from "../../components/Banner";
 import Coffee from "../../components/Coffee";
-
+import Head from 'next/head';
+import Script from "next/script";
 
 const query = groq`
 *[_type=='post'] {
@@ -49,9 +50,10 @@ export default async function HomePage() {
     return(
         <div>
         <Banner/>
-        <Coffee/>
         <Hero quotes={quotes}/>
         <BlogList posts={posts}/>
+        <Coffee/>
+
         </div>
     );
 }

@@ -3,7 +3,6 @@ import Link from "next/link"
 function Banner() {
   return (
     <div>
-         
     <div className="h-[26rem] lg:h-[36rem] " style={{backgroundImage: `url('https://images.unsplash.com/photo-1516054719048-38394ee6cf3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')`}}>
     
         <div className="flex items-center justify-center">
