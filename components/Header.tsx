@@ -70,9 +70,10 @@ const Header = () => {
                         </div>
                         <div className="mt-6">
                             <nav className="grid gap-y-8">
-                                <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/">Home</Link>
-                                <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/author">About</Link>
-                                <Link href="http://eepurl.com/ihYDYX" className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2">Newsletter</Link>
+                                
+                                <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/"><Popover.Button>Home</Popover.Button></Link>
+                                <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/author"><Popover.Button>About</Popover.Button></Link>
+                                <Link href="http://eepurl.com/ihYDYX" className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"><Popover.Button>Newsletter</Popover.Button></Link>
                             </nav>
                         </div>
                         {/* 
