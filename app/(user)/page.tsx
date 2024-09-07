@@ -40,7 +40,7 @@ export default async function HomePage() {
         <div>
         <NarrativeBanner/>
         <ContentBox contentData={contentData}/>
-        {/* <Testimonials/> add this later*/}
+        {/* <Testimonials/> add this later everything else should be goof*/}
         <Coffee/>
         </div>
     );
