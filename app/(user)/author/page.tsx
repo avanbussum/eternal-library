@@ -36,6 +36,8 @@ export default async function AboutPage() {
     return(
         <div>
             <AuthorList authors={authors}/>
+            <div id='contact'></div>
         </div>
+                
     );
 }

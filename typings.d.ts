@@ -64,6 +64,11 @@ interface Quote extends Base {
     image: Image;
 }
 
+interface ContentBox extends Base {
+    description: Block[];
+    title: string;
+}
+
 interface MainImage {
     _type: "image";
     asset: Reference;

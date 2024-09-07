@@ -2,22 +2,14 @@ import {previewData} from "next/headers";
 import {groq} from 'next-sanity'
 import { client } from "../../lib/sanity.client";
 import PreviewSuspense from "../../components/PreviewSuspense";
-import PreviewBlogList from "../../components/PreviewBlogList";
-import BlogList from "../../components/BlogList";
-import Hero from "../../components/Hero";
-import Banner from "../../components/Banner";
 import Coffee from "../../components/Coffee";
+import NarrativeBanner from "../../components/NarrativeCartography/NarrativeBanner";
+import Testimonials from "../../components/NarrativeCartography/Testimonials";
+import ContentBox from "../../components/NarrativeCartography/ContentBox";
+import PreviewNarrative from "../../components/PreviewNarrative";
 
 const query = groq`
-*[_type=='post'] {
-    ...,
-    author->,
-    categories[]->
-} | order(_createdAt desc)
-`;
-
-const query2 = groq`
-*[_type=='quote'] {
+*[_type=='contentBox'] {
     ...,
 }
 `;
@@ -36,20 +28,19 @@ export default async function HomePage() {
                     </div>
                 }
             >
-                <PreviewBlogList query={query} query2={query2}/>
+                <PreviewNarrative query={query}/>
             </PreviewSuspense>
         );
     }
 
-    const posts = await client.fetch(query);
-    const quotes = await client.fetch(query2);
+    const contentData = await client.fetch(query);
+    console.log(contentData)
 
-    console.log(posts)
     return(
         <div>
-        <Banner/>
-        <Hero quotes={quotes}/>
-        <BlogList posts={posts}/>
+        <NarrativeBanner/>
+        <ContentBox contentData={contentData}/>
+        <Testimonials/>
         <Coffee/>
         </div>
     );
