@@ -23,9 +23,21 @@ const Header = () => {
                 />
             </Link>
             <div className="grow">
-                <div className="text-black font-bold hidden sm:flex items-center justify-center gap-4 md:gap:8">
+                <div className="text-black font-bold hidden sm:flex items-center justify-between gap-4 md:gap:8">
+                </div>
+            </div>
+            <div className="grow">
+                <div className="text-black font-bold hidden sm:flex items-center justify-between gap-4 md:gap:8">
                     <Link href="/author">About</Link>
                 </div>
+            </div>
+            <div className="grow">
+                <div className="text-black font-bold hidden sm:flex items-center justify-between gap-4 md:gap:8">
+                    <Link href="/blog">Blog</Link>
+                </div>
+            </div>
+            <div className="hidden sm:block">
+                <Link href="http://eepurl.com/ihYDYX" className="mr-2 font-bold">Newsletter</Link>
             </div>
 
             <div className="flex grow items-center justify-end sm:hidden">
@@ -76,20 +88,10 @@ const Header = () => {
                                 <Link href="http://eepurl.com/ihYDYX" className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"><Popover.Button>Newsletter</Popover.Button></Link>
                             </nav>
                         </div>
-                        {/* 
-                        <div className="mt-6 flex flex-col items-center gap-2">
-                            <Link href="http://eepurl.com/ihYDYX" className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2
-                            focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">Newsletter</Link>
-                        </div>
-                        */}
                     </div>
                 </div>
             </Popover.Panel>
             </Transition>
-
-            <div className="hidden sm:block">
-                <Link href="http://eepurl.com/ihYDYX" className="mr-2 font-bold">Newsletter</Link>
-            </div>
         </Popover>
     )
 }
