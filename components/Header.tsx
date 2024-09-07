@@ -37,7 +37,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="hidden sm:block">
-                <Link href="http://eepurl.com/ihYDYX" className="mr-2 font-bold">Newsletter</Link>
+                <Link href="http://eepurl.com/ihYDYX" target="_blank" className="mr-2 font-bold">Newsletter</Link>
             </div>
 
             <div className="flex grow items-center justify-end sm:hidden">

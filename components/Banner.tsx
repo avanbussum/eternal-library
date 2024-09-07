@@ -23,7 +23,7 @@ function Banner() {
                             <Link href="/author" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white">The Author</Link> 
                         </div>
                         <div className="mt-6 lg:mt-10 flex justify-center items-center">
-                            <Link href="http://eepurl.com/ihYDYX" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white">Newsletter</Link> 
+                            <Link href="http://eepurl.com/ihYDYX" target="_blank" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white">Newsletter</Link> 
                         </div>
                     </div>
                 </div>
