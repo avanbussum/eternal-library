@@ -74,7 +74,7 @@ const Header = () => {
                         />
                             <div className="mr-2">
                                 <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400
-                                hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-600">
+                                hover:bg-gray-100 hover:text-gray-500 focus:outline-none">
                                     <span className="sr-only">Close menu</span>
                                     <XMarkIcon className="h-6 w-6" aria-hidden="true"/>
                                 </Popover.Button>
@@ -82,10 +82,10 @@ const Header = () => {
                         </div>
                         <div className="mt-6">
                             <nav className="grid gap-y-8">
-                                
-                                <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/"><Popover.Button>Home</Popover.Button></Link>
-                                <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/author"><Popover.Button>About</Popover.Button></Link>
-                                <Link href="http://eepurl.com/ihYDYX" className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"><Popover.Button>Newsletter</Popover.Button></Link>
+                                <Link className="focus:outline-none w-fit focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/"><Popover.Button>Home</Popover.Button></Link>
+                                <Link className="focus:outline-none w-fit focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/author"><Popover.Button>About</Popover.Button></Link>
+                                <Link className="focus:outline-none w-fit focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2" href="/blog"><Popover.Button>Blog</Popover.Button></Link>
+                                <Link href="http://eepurl.com/ihYDYX" target="_blank" className="focus:outline-none w-fit focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"><Popover.Button>Newsletter</Popover.Button></Link>
                             </nav>
                         </div>
                     </div>

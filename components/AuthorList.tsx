@@ -21,7 +21,7 @@ function AuthorList({authors}: Props) {
                         
                         <div className="flex flex-col lg:flex-row items-center">
                             <div>
-                                <div className= "-z-50 relative w-screen h-80 lg:w-96 lg:h-96 lg:mr-5">
+                                <div className= "-z-50 relative w-96 lg:w-96 lg:h-[37rem] h-96 lg:mr-5">
                                     <Image
                                         className="object-cover rounded-lg"
                                         src={urlFor(author.image).url()}
@@ -31,7 +31,7 @@ function AuthorList({authors}: Props) {
                                 </div>
                             </div>
                             <div>
-                                    <div className="bg-gradient-to-r from-[#e9e8e5] to-[#dedbdb] text-center text-black px-3 py-3 mt-5 lg:mt-0 rounded-lg font-semibold text-sm lg:text-lg lg:h-96 flex flex-col justify-center">
+                                    <div className="bg-gradient-to-r from-[#e9e8e5] to-[#dedbdb] text-center sm:w-auto w-96 text-black px-3 py-3 mt-5 lg:mt-0 rounded-lg lg:h-[37rem] h-auto font-semibold text-sm lg:text-lg flex flex-col justify-center">
                                         <PortableText value={author.bio} components={RichTextComponents}/>
                                     </div>
                                
@@ -39,7 +39,7 @@ function AuthorList({authors}: Props) {
                         </div>
 
                         <div className="mt-5 flex-1">
-                            <p className="underline text-lg font-bold">{author.name}</p>
+                            <p className="underline text-lg text-center lg:text-left lg:items-start font-bold">{author.name}</p>
                         </div>
                         {/*
                         <p className="mt-5 font-bold flex items-center group-hover:underline font-mono">
