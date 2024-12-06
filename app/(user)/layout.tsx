@@ -12,11 +12,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className="max-w-7xl mx-auto bg-gray-100 text-gray-900">
+      <body className="max-w-7xl mx-auto">
         <Header />
         <main>{children}</main>
         <footer className="p-4 bg-gradient-to-r from-[#e9e8e5] to-[#dedbdb] text-gray-900 text-center text-sm">
-          <p>&copy; 2024 The Eternal Library </p> <p> All rights reserved</p>
+          <p>&copy; 2024 Ryan Van Bussum </p> <p> All rights reserved</p>
           {/* <nav>
             <ul className="flex justify-center space-x-4">
               <li>

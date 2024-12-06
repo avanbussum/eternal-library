@@ -16,9 +16,10 @@ const Header = () => {
             <Link href="/">
                 <Image
                     className="rounded-full"
-                    height={60}
-                    width={60}
-                    src="/images/fthr-removebg-preview.png"
+                    height={35}
+                    width={35        }
+                    // src="/images/fthr-removebg-preview.png"
+                    src="/images/temple-of-fools-logo.jpg"
                     alt="logo"
                 />
             </Link>
@@ -42,7 +43,7 @@ const Header = () => {
 
             <div className="flex grow items-center justify-end sm:hidden">
                 <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400
-                hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-100">
                     <span className="sr-only">Open menu</span>
                     <Bars3Icon className="h-6 w-6" aria-hidden="true"/>
                 </Popover.Button>
@@ -67,9 +68,9 @@ const Header = () => {
                         <div className="flex items-center justify-between">
                         <Image
                             className="rounded-full"
-                            height={60}
-                            width={60}
-                            src="/images/fthr-removebg-preview.png"
+                            height={35}
+                            width={35}
+                            src="/images/temple-of-fools-logo.jpg"
                             alt="logo"
                         />
                             <div className="mr-2">

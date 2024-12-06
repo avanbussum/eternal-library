@@ -20,10 +20,10 @@ function Banner() {
                     </h4>
                     <div className="flex justify-center items-center gap-4">
                         <div className="mt-6 lg:mt-10 flex justify-center items-center">
-                            <Link href="/author" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white">The Author</Link> 
+                            <Link href="/author" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-500 duration-300 hover:text-white">The Author</Link> 
                         </div>
                         <div className="mt-6 lg:mt-10 flex justify-center items-center">
-                            <Link href="http://eepurl.com/ihYDYX" target="_blank" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white">Newsletter</Link> 
+                            <Link href="http://eepurl.com/ihYDYX" target="_blank" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-500 duration-300 hover:text-white">Newsletter</Link> 
                         </div>
                     </div>
                 </div>

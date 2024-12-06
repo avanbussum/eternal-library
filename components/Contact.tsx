@@ -27,7 +27,7 @@ function Contact() {
   return (
     <form ref={form} onSubmit={sendEmail}>
       <h1 className='font-bold text-4xl flex items-center justify-center mb-6'>Contact Me</h1>
-      <div className="grid gap-8 mb-6 mx-10 w-auto bg-gradient-to-r from-[#e9e8e5] to-[#dedbdb] rounded-lg p-5">
+      <div className="grid gap-8 mb-6 mx-10 w-auto bg-gradient-to-r from-[#e9e8e5] to-[#dedbdb] rounded-lg p-5 sm:h-2/3">
         <div>
           <label className="block mb-2 text-sm font-medium text-gray-400">Name</label>
           <input type="text" name="user_name" className="bg-gray-50 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="John Doe" required/>
@@ -38,12 +38,12 @@ function Contact() {
         </div>
         <div>
           <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-400">Your message</label>
-          <textarea name="message" className="bg-gray-50 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Write your thoughts here..."></textarea>
+          <textarea name="message" className="bg-gray-50 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 h-[35vh] md:h-[20vh]" placeholder="Write your thoughts here..."></textarea>
         </div>
         <button
           type="submit"
           disabled={isSent}
-          className={`text-white ${isSent ? 'bg-green-500 hover:bg-green-500' : 'bg-[#d4af37]'} hover:bg-[#b19331] focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full sm:w-auto px-8 py-4 text-center`}
+          className={`text-black ${isSent ? 'bg-green-500' : 'bg-gray-400 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-green-600 duration-300 hover:text-white'} focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full sm:w-auto px-8 py-4 text-center`}
         >
           {submit}
         </button>

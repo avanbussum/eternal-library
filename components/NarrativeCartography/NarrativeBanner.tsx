@@ -12,15 +12,15 @@ function NarrativeBanner() {
                     <h2 className="mt-5 font-serif md:mt-3">
                         Where Are {" "} <span className="italic">You</span>{" "} in the Story of Your Life?
                     </h2>
-                    <h4 className="text-[#c4c3c0] font-serif mt-2">
+                    <h4 className="text-[#ffecb1] font-serif mt-2">
                         Writing | Philosophy | Magic
                     </h4>
                     <div className="flex justify-center items-center gap-4">
                         <div className="mt-6 lg:mt-10 flex justify-center items-center">
-                            <a className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white" href="/author/#contact">Inquiries</a>
+                            <a className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-500 duration-300 hover:text-white" href="/author/#contact">Inquiries</a>
                         </div>
                         <div className="mt-6 lg:mt-10 flex justify-center items-center">
-                            <Link href="https://forms.gle/BSkvPWChVwGLPXSN6" target="_blank" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black hover:bg-[#d4af37] hover:text-white">Leave a Review</Link> 
+                            <Link href="https://forms.gle/BSkvPWChVwGLPXSN6" target="_blank" className="bg-white lg:px-8 px-4 py-3 rounded-full text-md font-bold text-black transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-500 duration-300 hover:text-white">Leave a Review</Link> 
                         </div>
                     </div>
                 </div>
