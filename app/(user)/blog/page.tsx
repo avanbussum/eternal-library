@@ -1,4 +1,4 @@
-import {previewData} from "next/headers";
+import {draftMode} from "next/headers";
 import {groq} from 'next-sanity'
 import { client } from "../../../lib/sanity.client";
 import PreviewSuspense from "../../../components/PreviewSuspense";
@@ -25,7 +25,8 @@ const query2 = groq`
 export const revalidate = 30; //revalidate this page every 30 seconds
 
 export default async function HomePage() {
-    if(previewData()) {
+    const { isEnabled } = await draftMode();
+    if(isEnabled) {
         return (
             <PreviewSuspense
                 fallback = {

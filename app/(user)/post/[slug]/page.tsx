@@ -70,7 +70,7 @@ async function Post({ params: { slug } }: Props) {
                         </div>
                         <div className="flex items-center space-x-2">
                             <Image
-                                className="rounded-full"
+                                className="rounded-full h-10"
                                 src={urlFor(post.author.image).url()}
                                 alt={post.author.name}
                                 height={40}

@@ -82,10 +82,10 @@ const Header = () => {
                         </div>
                         <div className="mt-6">
                             <nav className="grid gap-y-8">
-                                <Popover.Button className="hover:bg-gray-100 rounded-md p-2 flex items-start text-left"><Link href="/">Home</Link></Popover.Button>
-                                <Popover.Button className="hover:bg-gray-100 rounded-md p-2 flex items-start text-left"><Link href="/author">Author</Link></Popover.Button>
-                                <Popover.Button className="hover:bg-gray-100 rounded-md p-2 flex items-start text-left"><Link href="/blog">Blog</Link></Popover.Button>
-                                <Popover.Button className="hover:bg-gray-100 rounded-md p-2 flex items-start text-left"><Link href="http://eepurl.com/ihYDYX" target="_blank">Newsletter</Link></Popover.Button>
+                                <Popover.Button as={Link} href="/" className="hover:bg-gray-100 rounded-md p-2 flex items-start text-left">Home</Popover.Button>
+                                <Popover.Button as={Link} href="/author" className="hover:bg-gray-100 rounded-md p-2 flex items-start text-left">Author</Popover.Button>
+                                <Popover.Button as={Link} href="/blog"className="hover:bg-gray-100 rounded-md p-2 flex items-start text-left">Blog</Popover.Button>
+                                <Popover.Button as={Link} href="http://eepurl.com/ihYDYX" target="_blank" className="hover:bg-gray-100 rounded-md p-2 flex items-start text-left">Newsletter</Popover.Button>
                             </nav>
                         </div>
                     </div>
