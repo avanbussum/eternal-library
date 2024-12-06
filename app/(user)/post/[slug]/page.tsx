@@ -7,10 +7,10 @@ import { PortableText } from "@portabletext/react"
 import { RichTextComponents } from "../../../../components/RichTextComponents";
 
 type Props = {
-    params: {
-        slug: string;
-    }
-}
+    params: Promise<{
+      slug: string;
+    }>;
+};
 
 export const revalidate = 30; //revalidate this page every 30 seconds
 
@@ -31,7 +31,10 @@ export async function generateStaticParams() {
     }))
 }
 
-async function Post({ params: { slug } }: Props) {
+async function Post({ params }: Props) {
+    const resolvedParams = await params;
+    const { slug } = resolvedParams;
+
     const query = groq`
         *[_type=='post' && slug.current == $slug] [0]
         {
