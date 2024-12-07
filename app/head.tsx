@@ -6,7 +6,7 @@ export default function Head() {
       <meta name="description" content="Dive into The Eternal Library, your gateway to boundless magic, narrative cartography, and timeless wisdom." />
       <meta name="keywords" content="Eternal Library, magic, knowledge, books, narrative cartography, wisdom" />
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <link rel="icon" href="images/fthr-removebg-2.png" />
+      <link rel="icon" href="/favicon.ico" />
 
       {/* Open Graph Metadata */}
       <meta property="og:title" content="The Eternal Library - Explore Infinite Knowledge" />
